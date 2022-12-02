@@ -1,0 +1,167 @@
+
+.txt{
+  display: flex;
+    color: white;
+    
+}
+
+/* nav  bar*/
+nav{
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: gray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+  }
+  
+  @media  screen and (max-width:600px) {
+    nav{
+        display: flex;
+        position: absolute;
+        top: 4px;
+        left: 2px;
+        width: 250px;
+        height: 100%;
+        background: gray;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.5s all ease-in;
+
+
+    }
+    nav ul{
+        flex-direction: column;
+        padding: 1px;
+        
+    }
+    
+    .txt{
+      display: flex;
+      justify-content: flex-start;
+      left:1px;
+      color: black;
+
+    }
+  }
+  .content{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+  }
+  .content div{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .btn1{
+     background-color: gray;
+     border-bottom: none;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+
+  }
+  section{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    gap: 2px;
+    
+  }
+  .open-section{
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2px;
+    left: 30%;
+    margin-top: 5%;
+
+  }
+
+.crd{
+      display: flex;
+     position: absolute;
+      width: 250px;
+      height: 150px;
+      background-color: black;
+      
+}
+  .crd1{
+    display: flex;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: black;
+    margin-top: 15%;
+    
+}
+.crd2{
+  display: flex;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background-color: black;
+  margin-top: 35%;
+  
+}
+.crd3{
+  display: flex;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background-color: black;
+  margin-top: 35%;
+ 
+  
+}
+.crd4{
+  display: flex;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background-color: black;
+  margin-top: 55%;
+  
+}
